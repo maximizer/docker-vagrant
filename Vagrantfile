@@ -12,7 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "phusion/ubuntu-14.04-amd64"
 
-  (9000..9900).each do |port|
+  (7000..7100).each do |port|
     config.vm.network :forwarded_port, :host => port, :guest => port
   end
 
